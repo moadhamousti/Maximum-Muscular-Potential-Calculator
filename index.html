@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Muscular Potential Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-wrapper">
+			<h1 style="text-align: center;">Maximum Muscular Potential Calculator <strong>(<strong style="color: rgb(49, 124, 253);">Casey Butt Formula</strong>) :</strong></h1>
+            <form>
+                <div class="form">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" class="form-input" id="height">
+                </div>
+
+                <div class="form">
+                    <label for="ankle">Ankle Circumference (cm):</label>
+                    <input type="number" class="form-input" id="ankle">
+                </div>
+
+                <div class="form">
+                    <label for="wrist">Wrist Circumference (cm):</label>
+                    <input type="number" class="form-input" id="wrist">
+                </div>
+
+                <div class="form">
+                    <label for="bodyfat">Body Fat (%):</label>
+                    <input type="number" class="form-input" id="bodyfat">
+                </div>
+
+                <div class="btns">
+                    <button type="button" id="calculateBtn" class="btn" onclick="calculate()">Calculate</button>
+                    <button type="button" id="clear" class="btn" onclick="clearFields()">Clear</button>
+                </div>
+            </form>
+
+
+			<p id="clickToShow" onclick="toggleHiddenContent()">Click to Show More Information</p>
+            	<div id="hiddenContentContainer">
+					<p>The Butt formula is a bit more complicated. It also takes into account your bone structure and frame size by way of your wrist 
+						and ankle circumferences.  On top of that, your body fat percentage is also taken into consideration when determining your 
+						maximum natural lean body mass. </p>
+					<p>Here’s what the formula looks like:</p>
+					<img src="./img/Formula FBMass.png" alt="">
+					<ul class="labels-formula">
+						<li>H = height (inches)</li>
+						<li>A = ankle circumference</li>
+						<li>W = wrist circumference</li>
+						<li>%bf = body fat percentage</li>
+					</ul>
+				</div>
+
+            <div class="results">
+                <h1 class="infos-title">Maximum Muscular Potential</h1>
+                <p class="infos">
+                    Based on the information provided, we have calculated the following maximum muscular potentials based on the <strong style="color: rgb(26, 201, 241);"><a href="https://dioxyme.com/pages/maximum-muscular-potential-calculator">Casey Butt formulas</a></strong>.
+                </p>
+                <div id="result-bmass"></div>
+                <div id="result-chest"></div>
+                <div id="result-upper"></div>
+                <div id="result-neck"></div>
+                <div id="result-farm"></div>
+                <div id="result-thigh"></div>
+                <div id="result-calf"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
