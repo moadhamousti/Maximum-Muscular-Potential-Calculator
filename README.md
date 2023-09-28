@@ -1,4 +1,4 @@
-# Maximum-Muscular-Potential-Calculator 💪 
+# Maximum-Muscular-Potential-Calculator 💪  
 
 
 
