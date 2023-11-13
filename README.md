@@ -1,5 +1,5 @@
 # Maximum Muscular Potential Calculator 💪 ( Casey Butt Formula ) :
- 
+  
 
 ### Maximum Muscle Potential measurements for each Muscle Group : 
 
