@@ -25,9 +25,6 @@ function calculate() {
     document.getElementById("result-calf").innerHTML = "Calf: " + (calf * cm).toFixed(2) + " cm";
 }
 
-
-
-
 function clearFields() {
   // Clear input fields
   document.getElementById("height").value = "";
