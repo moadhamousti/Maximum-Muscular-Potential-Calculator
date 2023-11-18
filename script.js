@@ -8,7 +8,6 @@ function calculate() {
   const cm = 2.54
   const lb = 0.45359237
  
-
   let maxLeanBodyMass = Math.pow((height * inche), 1.5) * [(Math.sqrt(wrist * inche) / 22.6670) + (Math.sqrt(ankle * inche) / 17.0104)] * ((bodyfat * 0.01 / 224) + 1);
   let chest = (1.625 * (wrist * inche)) + (1.3682 * (ankle * inche)) + (.3562 * (height * inche));
   let upperArm = (1.1709 * (wrist * inche)) + (.1350 * (height * inche));
