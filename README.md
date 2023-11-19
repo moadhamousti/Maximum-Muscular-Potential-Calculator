@@ -10,7 +10,5 @@
 
 ☑️ - Used formula for each muscle.
 
-### Screen Shoots 📷 :
-
 
 
