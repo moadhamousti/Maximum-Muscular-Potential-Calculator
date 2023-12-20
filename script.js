@@ -1,4 +1,4 @@
-function calculate() { 
+function calculate() {  
   let height = parseFloat(document.getElementById("height").value); 
   let ankle = parseFloat(document.getElementById("ankle").value);
   let wrist = parseFloat(document.getElementById("wrist").value);
